@@ -1,0 +1,31 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=SWM341xE
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=VFPv5_SP
+SIMD=false
+trustzoneoptional=false
+trustzone=false
+
+ProbeScriptFile=$TOOLKIT_DIR$\config\debugger\Synwit\SWM341xE.ProbeScript
+DeviceMacros=$TOOLKIT_DIR$\config\debugger\Synwit\SWM341xE.dmac
+
+JTAG=true
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=STAR
+
+[DDF FILE]
+name=Synwit\SWM341.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\Synwit\SWM341xE.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\Synwit\FlashSWM341xE.board

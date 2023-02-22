@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<optionMenuItem>
+  <tag>SWM201x6</tag>
+  <display>Synwit SWM201x6</display>
+  <data>$CUR_DIR$\SWM201x6.i79</data>
+</optionMenuItem>

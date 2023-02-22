@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<optionMenuItem>
+  <tag>SWM320xC</tag>
+  <display>Synwit SWM320xC</display>
+  <data>$CUR_DIR$\SWM320xC.i79</data>
+</optionMenuItem>

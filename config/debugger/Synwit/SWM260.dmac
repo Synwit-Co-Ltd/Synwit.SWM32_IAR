@@ -1,0 +1,44 @@
+// SWM260 utility macros
+
+_ExecDeviceExecutionStarted()
+{
+  if (__driverType("ijet") || __driverType("cmsisdap"))
+  {
+    // Allow debugging in power saving modes.
+  }
+}
+
+unlockFlash()
+{
+  // unlock Flash program and erase controller
+}
+
+
+lockFlash()
+{
+  // lock Flash program and erase controller
+}
+
+setOptionBytesWriteEnable()
+{
+  //Write enable for option bytes area
+}
+
+
+readProtectionEnable()
+{
+// NOTICE
+// This function will set read protection level 1, which can be disabled.
+// Protection level 2 is irreversible and makes the JTAG interface permanently inoperable.
+// See "Reference manual STM32F05xxx/06xxx advanced ARM-based 32-bit MCUs" for details.
+}
+
+
+readProtectionDisable()
+{
+}
+
+
+getPersistentMacros()   // <-- Reserved name, debugger calls it to populate QuickLaunch view.
+{
+}

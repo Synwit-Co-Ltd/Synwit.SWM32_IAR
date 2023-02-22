@@ -1,0 +1,29 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=SWM320xE
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=None
+SIMD=false
+
+ProbeScriptFile=$TOOLKIT_DIR$\config\debugger\Synwit\SWM320xE.ProbeScript
+DeviceMacros=$TOOLKIT_DIR$\config\debugger\Synwit\SWM320xE.dmac
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M4
+
+[DDF FILE]
+name=Synwit\SWM320.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\Synwit\SWM320xE.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\Synwit\FlashSWM320xE.board

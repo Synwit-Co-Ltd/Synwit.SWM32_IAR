@@ -1,0 +1,29 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=SWM190xB
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=None
+SIMD=false
+
+ProbeScriptFile=$TOOLKIT_DIR$\config\debugger\Synwit\SWM190xB.ProbeScript
+DeviceMacros=$TOOLKIT_DIR$\config\debugger\Synwit\SWM190xB.dmac
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M0
+
+[DDF FILE]
+name=Synwit\SWM190.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\Synwit\SWM190xB.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\Synwit\FlashSWM190xB.board

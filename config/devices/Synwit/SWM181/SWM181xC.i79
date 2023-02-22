@@ -1,0 +1,29 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=SWM181xC
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=None
+SIMD=false
+
+ProbeScriptFile=$TOOLKIT_DIR$\config\debugger\Synwit\SWM181xC.ProbeScript
+DeviceMacros=$TOOLKIT_DIR$\config\debugger\Synwit\SWM181xC.dmac
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M0
+
+[DDF FILE]
+name=Synwit\SWM181.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\Synwit\SWM181xC.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\Synwit\FlashSWM181xC.board
