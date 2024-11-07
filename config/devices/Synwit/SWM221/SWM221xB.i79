@@ -1,0 +1,29 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=SWM221xB
+endiansupport=le
+thumbsupport=true
+armsupport=false
+fpu=None
+SIMD=false
+
+ProbeScriptFile=$TOOLKIT_DIR$\config\debugger\Synwit\SWM221.ProbeScript
+DeviceMacros=$TOOLKIT_DIR$\config\debugger\Synwit\SWM221.dmac
+
+JTAG=false
+SWD=true
+SWO_TraceD0=false
+
+[CORE]
+name=Cortex-M0
+
+[DDF FILE]
+name=Synwit\SWM221.ddf
+
+[LINKER FILE]
+name=$TOOLKIT_DIR$\config\linker\Synwit\SWM221xB.icf
+
+[FLASH LOADER]
+little=$TOOLKIT_DIR$\config\flashloader\Synwit\FlashSWM221xB.board
