@@ -1,0 +1,17 @@
+; I-jet script file for Synwit SWM261 (Cortex-M0) series devices
+return ; End of default action
+
+;-------------------------------------------------
+; Routines
+
+:ConnectUnderReset [reset_default:9] ; Connect during reset
+    emu JtagHeader=reset:0 ; assert reset active
+    refresh
+    s32 0xE000EDFC |= 1
+    emu JtagHeader=reset:1 ; deassert reset
+    emu JtagHeader=reset:r ; deassert reset
+    emu JtagHeader=reset:c ; deassert reset
+    reset system
+    return
+    
+; End of file "SWM261.ProbeScript"
